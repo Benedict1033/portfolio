@@ -72,7 +72,7 @@
 	    var href = $.attr(this, 'href');
 
 	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top - 70
+	        scrollTop: $($.attr(this, 'href')).offset().top - 30
 	    }, 500, function() {
 	    	// window.location.hash = href;
 	    });
@@ -277,7 +277,7 @@
 			event.preventDefault();
 
 			$('html,body').animate({
-				scrollTop: $('.goto-here').offset().top
+				scrollTop: $('#about-section').offset().top - 30
 			}, 500, 'easeInOutExpo');
 			
 			return false;
@@ -372,7 +372,7 @@ window.onload = function() {
     e.preventDefault();
     //set the top offset animation and speed
     $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top - 180
+      scrollTop: $($(this).attr('href')).offset().top -30
 },500);
     hash($(this).attr('href'));
   });
